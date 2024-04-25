@@ -1,0 +1,437 @@
+21:45:13.470 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:45:13.492 [main] DEBUG com.intuit.karate.Suite - waiting for 11 features to complete
+21:45:15.444 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+21:45:15.444 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:45:15.444 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+21:45:15.444 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+21:45:15.444 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+21:45:15.552 [pool-2-thread-5] INFO  com.intuit.karate - >> lock acquired, begin callonce: read("nuevo.feature")
+21:45:16.233 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 900","description":"Gama Alta de Apple","price":3000}
+
+21:45:16.233 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 62
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 > Accept-Encoding: gzip,deflate
+{"name":"","description":"Telefono de alta gama","price":1850}
+
+21:45:16.233 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Redmi  101","description":"","price":1100}
+
+21:45:16.233 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 900","description":"Gama Alta de Apple","price":3000}
+
+21:45:16.233 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 900","description":"Gama Alta de Apple","price":3000}
+
+21:45:16.295 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 59
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"El nombre del producto no fue proporcionado"}
+
+21:45:16.295 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 59
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"1fadabc6-d167-45c9-b055-c55e25b87035","status":true,"message":"El producto fue creado con éxito!"}
+
+21:45:16.295 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 58
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"baafa264-1142-4227-bcf5-bfd734b0b2ee","status":true,"message":"El producto fue creado con éxito!"}
+
+21:45:16.295 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 59
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+21:45:16.295 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 59
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"9fd36eff-3c3d-4b57-86f7-9a01f937251a","status":true,"message":"El producto fue creado con éxito!"}
+
+21:45:16.303 [pool-2-thread-2] INFO  com.intuit.karate - [print] 1fadabc6-d167-45c9-b055-c55e25b87035 
+21:45:16.303 [pool-2-thread-5] INFO  com.intuit.karate - << lock released, cached callonce: read("nuevo.feature")
+21:45:16.310 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/baafa264-1142-4227-bcf5-bfd734b0b2ee/
+2 > Accept: application/json
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 61
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+2 > Accept-Encoding: gzip,deflate
+{"name":"","description":"Gama Alta de Apple 1","price":2100}
+
+21:45:16.311 [pool-2-thread-5] INFO  com.intuit.karate - [print] {
+  "sku": "9fd36eff-3c3d-4b57-86f7-9a01f937251a",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+21:45:16.324 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:8081/api/v1/product/123456/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:45:16.328 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 17
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+2 < Connection: close
+{"sku":"baafa264-1142-4227-bcf5-bfd734b0b2ee","status":false,"message":"El nuevo nombre no debe estar en blanco"}
+
+21:45:16.333 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/1fadabc6-d167-45c9-b055-c55e25b87035123/
+2 > Accept: application/json
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 81
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado 2","description":"Gama Alta de Apple 2","price":2200}
+
+21:45:16.334 [pool-2-thread-1] INFO  com.intuit.karate - [print] {
+  "sku": "baafa264-1142-4227-bcf5-bfd734b0b2ee",
+  "status": false,
+  "message": "El nuevo nombre no debe estar en blanco"
+}
+ 
+21:45:16.350 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 24
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+1 < Connection: close
+{"count":0,"status":false,"message":"El producto no fue encontrado"}
+
+21:45:16.353 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 18
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+2 < Connection: close
+{"sku":"1fadabc6-d167-45c9-b055-c55e25b87035123","status":false,"message":"El producto no fue encontrado"}
+
+21:45:16.357 [pool-2-thread-2] INFO  com.intuit.karate - [print] {
+  "sku": "1fadabc6-d167-45c9-b055-c55e25b87035123",
+  "status": false,
+  "message": "El producto no fue encontrado"
+}
+ 
+21:45:16.375 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+21:45:16.384 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+21:45:16.387 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:45:16.390 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:45:16.392 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+21:45:16.400 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product1
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:45:16.403 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 15
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":1,"name":"Iphone 900","sku":"b58c5447-546d-4d5b-a149-c85346201278","description":"Gama Alta de Apple","price":3000.0},{"id":3,"name":"Iphone 900","sku":"0bbaee06-4d4e-4283-a57e-2af5b11e8d54","description":"Gama Alta de Apple","price":3000.0},{"id":5,"name":"Iphone 900","sku":"4140706c-02e0-46e7-ae1c-55edd7507a23","description":"Gama Alta de Apple","price":3000.0},{"id":6,"name":"Iphone 900","sku":"a6e7c4fb-1618-4331-ae58-754b0e7c3b04","description":"Gama Alta de Apple","price":3000.0},{"id":7,"name":"Iphone 900","sku":"9fd36eff-3c3d-4b57-86f7-9a01f937251a","description":"Gama Alta de Apple","price":3000.0},{"id":8,"name":"Iphone 900","sku":"1fadabc6-d167-45c9-b055-c55e25b87035","description":"Gama Alta de Apple","price":3000.0},{"id":9,"name":"Iphone 900","sku":"baafa264-1142-4227-bcf5-bfd734b0b2ee","description":"Gama Alta de Apple","price":3000.0}],"status":true,"message":"Se encontró 7 producto(s)"}
+
+21:45:16.409 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+21:45:16.413 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 900","description":"Gama Alta de Apple","price":3000}
+
+21:45:16.418 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+21:45:16.431 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 15
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"9b1853af-15f2-4840-9fc7-b178c9918c09","status":true,"message":"El producto fue creado con éxito!"}
+
+21:45:16.439 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 900","description":"Gama Alta de Apple","price":3000}
+
+21:45:16.449 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+21:45:16.451 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/1841/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:45:16.454 [pool-2-thread-4] INFO  com.intuit.karate - [print] http://localhost:8081 
+21:45:16.464 [pool-2-thread-4] INFO  com.intuit.karate - >> lock acquired, begin callonce: read("nuevo.feature")
+21:45:16.464 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 12
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[],"status":false,"message":"El producto no fue encontrado"}
+
+21:45:16.471 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 68
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-04-25T02:45:16.467+00:00","status":404,"error":"Not Found","path":"/api/v1/product1"}
+
+21:45:16.479 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+2 > GET http://localhost:8081/api/v1/product/@/
+2 > Accept: application/json
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+2 > Accept-Encoding: gzip,deflate
+
+
+21:45:16.480 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 38
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"7a8178ea-884f-404f-9034-3979a58870f4","status":true,"message":"El producto fue creado con éxito!"}
+
+21:45:16.482 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+21:45:16.485 [pool-2-thread-1] INFO  com.intuit.karate - [print] {
+  "sku": "7a8178ea-884f-404f-9034-3979a58870f4",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+21:45:16.491 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 10
+2 < 200
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"products":[],"status":false,"message":"El producto no fue encontrado"}
+
+21:45:16.491 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/7a8178ea-884f-404f-9034-3979a58870f4/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:45:16.500 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+3 > GET http://localhost:8081/api/v1/product/null/
+3 > Accept: application/json
+3 > Host: localhost:8081
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+3 > Accept-Encoding: gzip,deflate
+
+
+21:45:16.502 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 11
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":11,"name":"Iphone 900","sku":"7a8178ea-884f-404f-9034-3979a58870f4","description":"Gama Alta de Apple","price":3000.0}],"status":true,"message":"El producto fue encontrado"}
+
+21:45:16.511 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 900","description":"Gama Alta de Apple","price":3000}
+
+21:45:16.514 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 14
+3 < 200
+3 < Content-Type: application/json
+3 < Transfer-Encoding: chunked
+3 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+3 < Keep-Alive: timeout=60
+3 < Connection: keep-alive
+{"products":[],"status":false,"message":"El producto no fue encontrado"}
+
+21:45:16.544 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 32
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"d207474c-2f29-4f53-a9be-464a614b72a9","status":true,"message":"El producto fue creado con éxito!"}
+
+21:45:16.548 [pool-2-thread-4] INFO  com.intuit.karate - << lock released, cached callonce: read("nuevo.feature")
+21:45:16.550 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+4 > GET http://localhost:8081/api/v1/product/123/
+4 > Accept: application/json
+4 > Host: localhost:8081
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+4 > Accept-Encoding: gzip,deflate
+
+
+21:45:16.556 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:8081/api/v1/product/d207474c-2f29-4f53-a9be-464a614b72a9/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:45:16.564 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 14
+4 < 200
+4 < Content-Type: application/json
+4 < Transfer-Encoding: chunked
+4 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+4 < Keep-Alive: timeout=60
+4 < Connection: keep-alive
+{"products":[],"status":false,"message":"El producto no fue encontrado"}
+
+21:45:16.573 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+5 > GET http://localhost:8081/api/v1/product1/123/
+5 > Accept: application/json
+5 > Host: localhost:8081
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+5 > Accept-Encoding: gzip,deflate
+
+
+21:45:16.576 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 20
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"count":1,"status":true,"message":"El producto fue eliminado con éxito"}
+
+21:45:16.585 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 11
+5 < 404
+5 < Vary: Origin
+5 < Vary: Access-Control-Request-Method
+5 < Vary: Access-Control-Request-Headers
+5 < Content-Type: application/json
+5 < Transfer-Encoding: chunked
+5 < Date: Thu, 25 Apr 2024 02:45:16 GMT
+5 < Keep-Alive: timeout=60
+5 < Connection: keep-alive
+{"timestamp":"2024-04-25T02:45:16.582+00:00","status":404,"error":"Not Found","path":"/api/v1/product1/123/"}
+
+21:45:17.722 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 11 (10 remaining) classpath:examples/users/actualizar1-SP.feature
+21:45:17.893 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 11 (9 remaining) classpath:examples/users/actualizar2-SP.feature
+21:45:17.991 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 11 (8 remaining) classpath:examples/users/create1-SP.feature
+21:45:18.076 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 11 (7 remaining) classpath:examples/users/create2-SP.feature
+21:45:18.277 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 11 (6 remaining) classpath:examples/users/eliminar sp.feature
+21:45:18.417 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 11 (5 remaining) classpath:examples/users/eliminar.feature
+21:45:18.473 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 7 of 11 (4 remaining) classpath:examples/users/listar.feature
+21:45:18.532 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 8 of 11 (3 remaining) classpath:examples/users/listar_sp.feature
+21:45:18.586 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 9 of 11 (2 remaining) classpath:examples/users/nuevo.feature
+21:45:18.687 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 10 of 11 (1 remaining) classpath:examples/users/obtener.feature
+21:45:18.858 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 11 of 11 (0 remaining) classpath:examples/users/obtener_sp.feature
